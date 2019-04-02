@@ -1,7 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	background: url('../img/main-bg.jpg');
 	background-size: cover;
 	position: relative;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+div, 
+section,
+header,
+footer {
+	display: block;
+	box-sizing: border-box;
 }
 
 .content-block {
@@ -11,7 +25,8 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 100vh;
+    display: block;
+    height: 100vh;
 }
 
 .content-block:after {
@@ -54,8 +69,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
 	padding: 20px 30px;
-	font-weight: medium;
+	font-weight: 500;
 	font-style: italic;
+	display: inline-block;
+	width: 100%;
 }
 
 .header-contact {
